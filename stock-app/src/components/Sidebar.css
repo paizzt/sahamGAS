@@ -61,3 +61,36 @@
   color: var(--text-secondary);
   opacity: 0.7;
 }
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  .sidebar-header {
+    padding: 1rem;
+  }
+  
+  .sidebar-nav {
+    padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-bottom: 1px solid var(--glass-border);
+  }
+
+  .sidebar-nav ul {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 1rem;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  .nav-link.active {
+    border-left: none;
+    border-bottom-color: var(--accent-primary);
+  }
+
+  .sidebar-footer {
+    display: none; /* Hide disclaimer on small screens to save space */
+  }
+}
